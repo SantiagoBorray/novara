@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cotización | Novara</title>
+  <meta name="description" content="Solicita por WhatsApp la cotización de tu servicio de aseo con Novara.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">NO<span>VARA</span></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="cotizacion.html" class="active" aria-current="page">Cotización</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="title">
+        <h1>Solicita tu Cotización</h1>
+        <p>Cuéntanos qué necesitas y prepararemos una cotización para tu servicio.</p>
+      </div>
+      <div class="form-box">
+        <form id="form-cotizacion">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" autocomplete="name" placeholder="Escribe tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" autocomplete="tel" inputmode="tel" placeholder="Ej: 300 123 4567" required>
+          </div>
+          <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" autocomplete="street-address" placeholder="Ej: Carrera 1 #1-02" required>
+          </div>
+          <div class="form-group">
+            <label for="servicio">Tipo de servicio</label>
+            <select id="servicio" required>
+              <option value="">Selecciona un servicio</option>
+              <option>Aseo General</option>
+              <option>Limpieza Profunda</option>
+              <option>Limpieza de Muebles</option>
+              <option>Planchado de Ropa</option>
+              <option>Aseo Posconstrucción</option>
+              <option>Aseo de Mudanza</option>
+              <option>Aseo de Oficinas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="promocion">Promoción (opcional)</label>
+            <select id="promocion">
+              <option>No deseo</option>
+              <option>Primera Visita</option>
+              <option>Plan Mensual</option>
+              <option>Recomienda y Gana</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha deseada</label>
+            <input type="date" id="fecha" required>
+          </div>
+          <div class="form-group">
+            <label for="detalles">Detalles adicionales (opcional)</label>
+            <textarea id="detalles" placeholder="Cuéntanos qué necesitas..."></textarea>
+          </div>
+          <button class="btn" type="submit">Solicitar cotización</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Novara</strong> — Aseo que transforma tus espacios.</p>
+    <p>© 2026 Novara. Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/573123233883" class="boton-flotante" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <img src="https://i.pinimg.com/originals/16/71/c0/1671c09a32f98796ede36fabfab4dee7.png" alt="WhatsApp">
+  </a>
+  <script src="script.js"></script>
+</body>
+</html>
